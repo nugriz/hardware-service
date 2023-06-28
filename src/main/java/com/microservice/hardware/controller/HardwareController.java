@@ -13,7 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.context.annotation.*;
 @RestController
-@RequestMapping(value = "hardware", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "hardware-service", produces = MediaType.APPLICATION_JSON_VALUE)
 public class HardwareController {
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
     @Autowired
