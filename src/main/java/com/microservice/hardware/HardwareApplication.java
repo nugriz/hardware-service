@@ -18,6 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.schema.ModelRef;
@@ -33,6 +34,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RestController
 @EnableConfigurationProperties
 @EnableDiscoveryClient
+//@EnableWebMvc
 public class HardwareApplication implements CommandLineRunner {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
